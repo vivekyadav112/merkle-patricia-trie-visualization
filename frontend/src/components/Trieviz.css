@@ -1,0 +1,86 @@
+/* Merkle Patricia Trie Visualizer Styles */
+#trieviz-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    padding-top: 60px;
+    position: relative;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #trieviz-graph {
+    width: 100%;
+    height: calc(100% - 60px);
+    border-radius: 8px;
+  }
+  
+  .node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    fill: #4CAF50;
+    stroke: #2196F3;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .node:hover circle {
+    fill: #45a049;
+    transform: scale(1.1);
+  }
+  
+  .node text {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    fill: #ffffff;
+    text-anchor: middle;
+    transition: all 0.3s ease;
+  }
+  
+  .node:hover text {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .link {
+    stroke: #4d4d4d;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .link:hover {
+    stroke: #666;
+    stroke-width: 3;
+  }
+  
+  .node.failed circle {
+    fill: #f44336;
+    stroke: #d32f2f;
+  }
+  
+  .node.failed text {
+    fill: #ffffff;
+    font-weight: 600;
+  }
+  
+  /* Animation for node updates */
+  @keyframes nodeUpdate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .node.updated circle {
+    animation: nodeUpdate 0.5s ease;
+  }

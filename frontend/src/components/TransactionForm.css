@@ -1,0 +1,35 @@
+/* Transaction Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #69b3a2;
+    box-shadow: 0 0 5px rgba(105, 179, 162, 0.6);
+  }
+  
+  button {
+    align-self: flex-start;
+  }
+  

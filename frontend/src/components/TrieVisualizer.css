@@ -1,0 +1,72 @@
+/* TrieVisualizer Styles */
+.trie-container {
+    width: 100%;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid #4e4e4e;
+    background-color: #4e4e4e;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #4e4e4e;
+  }
+  
+  #trie-graph {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    fill: #69b3a2;
+    stroke: green;
+    stroke-width: 2;
+    transition: fill 0.3s;
+  }
+  
+  .node:hover circle {
+    fill: #4d8c7b;
+  }
+  
+  /* Make the node text black */
+  .node text {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    text-anchor: middle;
+    fill: black; /* Set text color to black */
+  }
+  
+  .link {
+    stroke: #ccc;
+    stroke-width: 2;
+  }
+  
+  .node.failed circle {
+    fill: #e74c3c; /* Red for failed nodes */
+  }
+  
+  .node.failed text {
+    fill: Black;
+    font-weight: bold;
+  }
+  
+  .receipt-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  #receipt-graph {
+    width: 100%;
+    height: calc(100% - 40px);
+    display: block;
+  }
